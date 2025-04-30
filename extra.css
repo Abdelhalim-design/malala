@@ -1,0 +1,130 @@
+.md-header__button.md-logo img {
+    height: 70px !important;
+    width: auto !important;   /* Conserve les proportions */
+    max-height: none !important; /* Désactive les restrictions de taille */
+}
+
+.plan-rotor {
+  width: 300px;
+  height: auto;
+  display: block; /* S'assure que l'image est affichée comme un bloc */
+  text-align: center; /* Si jamais il y a du texte autour */
+}
+
+  #dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: rgb(244, 242, 242);
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  body.dark-mode {
+    background: #222;
+    color: white;
+  }
+  
+
+  .sommaire-container {
+    background-color: indigo; /* Fond gris clair, tu peux ajuster la couleur */
+    border: 2px solid #fffafa; /* Bordure grise */
+    padding: 20px; /* Espace intérieur autour du contenu */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(253, 247, 247, 0.1); /* Ombre légère pour donner de la profondeur */
+    width: 80%; /* Ajuste la largeur selon tes besoins */
+    margin: 0 auto; /* Centrer le bloc sur la page */
+}
+
+.sommaire-container ul {
+    list-style-type: none; /* Retirer les puces */
+    padding-left: 0;
+}
+
+.sommaire-container li {
+    font-size: 18px; /* Taille de police */
+    margin-bottom: 10px; /* Espacement entre les éléments */
+}
+
+.sommaire-container li:hover {
+    background-color: #e0e0e0; /* Fond change au survol */
+    cursor: pointer; /* Change le curseur pour un effet interactif */
+    padding-left: 10px; /* Décalage du texte pour l'effet visuel */
+}
+
+@keyframes electricWaves {
+  0% { background-position: 0 0; }
+  50% { background-position: 50px 50px; }
+  100% { background-position: 0 0; }
+}
+
+@keyframes electricWaves {
+  0% { background-position: 0 0; }
+  50% { background-position: 100px 100px; }
+  100% { background-position: 0 0; }
+}
+
+/* --- STYLE DES BOUTONS INTERACTIFS --- */
+.md-button {
+  background-color: #151515 !important; /* Orange GEII */
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.md-button:hover {
+  background-color: #111212 !important;
+  transform: scale(1.05);
+}
+
+/* --- STYLE DES LIENS --- */
+a {
+  color: #0a0a0a;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff9100;
+  text-decoration: underline;
+}
+
+/* --- ANIMATION LÉGÈRE DES TITRES --- */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+h1:hover, h2:hover, h3:hover {
+  animation: pulse 1s infinite;
+}
+
+/* --- STYLE DU MENU LATÉRAL --- */
+.md-nav__link {
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.md-nav__link:hover {
+  color: #0a0a09 !important;
+  transform: translateX(5px);
+}
+
+/* --- STYLE DES CARTES (si tu veux en ajouter plus tard) --- */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+ 

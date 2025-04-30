@@ -1,0 +1,60 @@
+site_name: "Portfolio"
+
+site_name: "Portfolio"
+
+nav:
+  - Accueil:
+      - A propos de moi: index.md
+      - Sommaire: Somaires.md
+  - Référentiel des Compétences: referenciel.md
+  - 📚 Projet :
+      - 📌 Semestre 1:
+          - 💧 Station de pompage:
+              - Concevoir: concevoir_station_pompage.md
+              - Vérifier: verifier_station_pompage.md
+          - 🤖 Robot Suiveur de Ligne:
+              - Concevoir: concevoir_robot_suiveur.md
+              - Vérifier: verifier_robot_suiveur.md
+      - 🏅 Semestre 2:
+          - 📖 Moteur de drone:
+              - Concevoir: concevoir_moteur_drone.md
+              - Vérifier: verifier_moteur_drone.md
+          - 🎨 Snake:
+              - Concevoir: concevoir_sae_snake.md
+              - Vérifier: verifier_sae_snake.md
+  - Mon experience personnel: 
+      - 📂 Projets et Compétences:
+          - 🏆 Projets en paralle: projet_realiser.md
+          - 🔧 Compétences: competence_aquise.md
+                      
+  - 📞 Contact: contact.md
+
+
+site_name: "Portfolio - Abdelhalim Zouggagh"
+theme:
+  name: "material"
+  palette:
+    scheme: white  # Fond sombre stylé / "default" pour fond clair
+    primary: indigo
+    accent: pink
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: "images/Logo-IUT-UM-Horizontal-couleur.png"
+  favicon: "images/favicon.ico"
+  features:
+    - navigation.instant  # Chargement rapide des pages
+    - navigation.tracking  # Garde la position dans la navigation
+    - navigation.sections  # Regroupe les menus
+    - navigation.expand  # Ouvre automatiquement le menu latéral
+    - navigation.tabs  # Affiche un menu sous forme d'onglets (optionnel)
+    - navigation.top  # Bouton retour en haut de la page
+    - toc.integrate  # Intègre la table des matières dans le menu latéral
+    
+
+extra_css:
+  - css/extra.css
+  
+  
+extra_javascript:
+  - https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap
