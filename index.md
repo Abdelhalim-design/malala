@@ -1,72 +1,73 @@
-# 🎓 Portfolio - Abdelhalim Zouggagh   
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Abdelhalim Zouggagh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Ton fichier CSS externe -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    .skills-container {
+        padding: 20px;
+    }
+    .skill {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    progress {
+        width: 100%;
+        height: 20px;
+    }
+    #map {
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
 
-Bienvenue sur mon portfolio !  
-Vous y découvrirez mon parcours, mes compétences et mes projets réalisés en **Génie Électrique et Informatique Industrielle (GEII)**.  
- 
+  <h1>🎓 Portfolio - Abdelhalim Zouggagh</h1>
+  <p>Bienvenue sur mon portfolio !<br>
+  Vous y découvrirez mon parcours, mes compétences et mes projets réalisés en <strong>Génie Électrique et Informatique Industrielle (GEII)</strong>.</p>
 
-## 🏅 À Propos de Moi  
+  <h2>🏅 À Propos de Moi</h2>
 
-🎓 **Abdelhalim Zouggagh**  
-📍 *Étudiant en Génie Électrique et Informatique Industrielle (GEII) - IUT de Nîmes*  
+  <p>
+    🎓 <strong>Abdelhalim Zouggagh</strong><br>
+    📍 <em>Étudiant en Génie Électrique et Informatique Industrielle (GEII) - IUT de Nîmes</em>
+  </p>
 
-<h2>📍 Localisation de mon IUT</h2>
-<div id="map" style="width: 100%; height: 200px;"></div>
+  <h2>📍 Localisation de mon IUT</h2>
+  <div id="map"></div>
 
-<!-- Ajout de Leaflet.js -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <h3>🔹 Parcours scolaire</h3>
+  <ul>
+    <li>🎓 <strong>Baccalauréat Général</strong> (Mathématiques & SES)</li>
+    <li>🏗️ <strong>GEII - IUT de Nîmes</strong> (Projets en électronique, programmation, systèmes embarqués...)</li>
+  </ul>
 
-<script>
-  var map = L.map('map').setView([43.836209871068535, 4.351685276710129], 15);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
+  <h3>🔹 Compétences principales</h3>
+  <ul>
+    <li>✅ Programmation (Python, C, HTML/CSS, Arduino)</li>
+    <li>✅ Systèmes embarqués & électronique</li>
+    <li>✅ Automatisme & réseaux industriels</li>
+  </ul>
 
-  L.marker([43.836209871068535, 4.351685276710129]).addTo(map)
-    .bindPopup('📍 IUT de Nîmes')
-    .openPopup();
-</script>
+  <h3>🔹 Objectifs professionnels</h3>
+  <ul>
+    <li>📡 Travailler dans le domaine des <strong>systèmes embarqués et de l'électronique industrielle</strong></li>
+    <li>🤖 Développer des solutions <strong>d'automatisation et d’intelligence artificielle embarquée</strong></li>
+    <li>🚀 Continuer mes études en <strong>ingénierie ou recherche appliquée</strong></li>
+  </ul>
 
-🔹 **Parcours scolaire** :  
-- 🎓 **Baccalauréat Général** (*Mathématiques & SES*)  
-- 🏗️ **GEII - IUT de Nîmes** (*Projets en électronique, programmation, systèmes embarqués...*)  
+  <button id="dark-mode-toggle">🌙 Mode Sombre</button>
 
-🔹 **Compétences principales** :  
-✅ Programmation (Python, C, HTML/CSS, Arduino)  
-✅ Systèmes embarqués & électronique  
-✅ Automatisme & réseaux industriels  
-
-
-🔹 **Objectifs professionnels** :  
-- 📡 Travailler dans le domaine des **systèmes embarqués et de l'électronique industrielle**  
-- 🤖 Développer des solutions **d'automatisation et d’intelligence artificielle embarquée**  
-- 🚀 Continuer mes études en **ingénierie ou recherche appliquée**  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button id="dark-mode-toggle">🌙 Mode Sombre</button>
-
-<script>
-  document.getElementById("dark-mode-toggle").addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-  });
-</script>
-
-
-
-<div class="skills-container">
+  <div class="skills-container">
     <h2>Mes Compétences</h2>
     <div class="skill">
         <label for="html">HTML</label>
@@ -84,22 +85,23 @@ Vous y découvrirez mon parcours, mes compétences et mes projets réalisés en 
         <label for="python">Python</label>
         <progress id="python" value="80" max="100"></progress>
     </div>
-</div>
+  </div>
 
-<style>
-    .skills-container {
-        padding: 20px;
-    }
-    .skill {
-        margin-bottom: 15px;
-    }
-    label {
-        display: block;
-        margin-bottom: 5px;
-    }
-    progress {
-        width: 100%;
-        height: 20px;
-    }
-</style>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([43.8362, 4.3517], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([43.8362, 4.3517]).addTo(map)
+      .bindPopup('📍 IUT de Nîmes')
+      .openPopup();
 
+    // Mode sombre
+    document.getElementById("dark-mode-toggle").addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+
+</body>
+</html>
